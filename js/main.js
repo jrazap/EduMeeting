@@ -80,8 +80,3 @@ counters.forEach((counter) => {
   };
   animate();
 });
-
-// $(window).scroll(function() {
-//   if (visible($('.count-digit'))) {
-//   }
-// })
