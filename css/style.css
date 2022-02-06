@@ -106,12 +106,15 @@ header {
   width: 100vw;
 }
 .reverse-header {
-  background-color: #fff !important;
   height: 80px !important;
   position: fixed !important;
   top: 0 !important;
   left: 0;
   right: 0;
+  width: 100% !important;
+  background-color: #fff !important;
+  color: black;
+  z-index: 10;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
 }
 .layer {
@@ -140,14 +143,7 @@ header .header-content nav {
   display: flex;
   align-content: center;
 }
-.sticky {
-  position: fixed !important;
-  top: 0 !important;
-  width: 100% !important;
-  background-color: var(--white--) !important;
-  color: black;
-  z-index: 10;
-}
+
 header .header-content nav h1 {
   width: fit-content;
 }

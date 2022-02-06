@@ -95,14 +95,13 @@ $("html").on("click", function () {
   $(".menu, .menuBtn").click(function (e) {
     e.stopPropagation();
   });
-
 // sticky Header
 window.onscroll = function () {
   var header = document.getElementById("stickyHeader");
   var sticky = header.offsetTop;
   if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
+    header.classList.add("reverse-header");
   } else {
-    header.classList.remove("sticky");
+    header.classList.remove("reverse-header");
   }
 };
