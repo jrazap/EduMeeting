@@ -749,7 +749,7 @@ section.facts .video img {
   header,
 .layer,
 video.header-bg{
-  height: 140vh;
+  height: 125vh;
 }
 }
 @media (max-width: 768px) {
