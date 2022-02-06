@@ -86,18 +86,8 @@ a {
 }
 .topBar .social a:hover,
 header .header-content nav ul li a:hover,
-header
-  .header-content
-  .container
-  p
-  span
-  a:hover
-  header
-  .header-content
-  nav
-  ul
-  li
-  a.active {
+header .header-content .container p span a:hover,
+header .header-content nav ul li a.active {
   color: var(--yellow--);
 }
 /* Header */
