@@ -101,7 +101,7 @@ header
 }
 /* Header */
 header {
-  height: 100vh;
+  height: 130vh;
   width: 100vw;
 }
 .reverse-header {
@@ -116,7 +116,7 @@ header {
 .layer {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 130vh;
   left: 0;
   right: 0;
   background-color: rgba(31, 31, 31, 0.8);
@@ -125,7 +125,7 @@ header {
 video {
   object-fit: cover;
   width: 100vw;
-  height: 100vh;
+  height: 130vh;
   top: 0;
   left: 0;
 }
