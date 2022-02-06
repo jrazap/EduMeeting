@@ -84,7 +84,7 @@ a {
   margin: auto 0.5rem;
   cursor: pointer;
 }
-.topBar .social i:hover,
+.topBar .social a:hover,
 header .header-content nav ul li a:hover,
 header
   .header-content
