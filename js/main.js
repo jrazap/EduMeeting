@@ -98,10 +98,20 @@ $("html").on("click", function () {
 // sticky Header
 window.onscroll = function () {
   var header = document.getElementById("stickyHeader");
+  var listItems = document.querySelectorAll("#menu li a");
+  var menuBtn = document.querySelector(".menuBtn");
   var sticky = header.offsetTop;
   if (window.pageYOffset > sticky) {
     header.classList.add("reverse-header");
+    menuBtn.classList.add("reverse-menuBtn");
+    listItems.forEach((item) => {
+      item.classList.add("reverse-list");
+    });
   } else {
     header.classList.remove("reverse-header");
+    menuBtn.classList.remove("reverse-menuBtn");
+    listItems.forEach((item) => {
+      item.classList.remove("reverse-list");
+    });
   }
 };

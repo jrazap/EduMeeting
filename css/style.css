@@ -117,6 +117,12 @@ header {
   z-index: 10;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
 }
+#menu li a.reverse-list {
+  color: #000;
+}
+#menu li a.reverse-list:hover {
+  color: var(--yellow--);
+}
 .layer {
   position: absolute;
   width: 100%;
@@ -152,7 +158,9 @@ header .header-content nav .menu {
   right: 15vw;
   top: 2rem;
 }
-header .header-content nav .menu .avatar,.fa-times,.menuBtn{
+header .header-content nav .menu .avatar,
+.fa-times,
+.menuBtn {
   display: none;
 }
 header .header-content nav .menu li {
@@ -752,26 +760,26 @@ section.facts .video img {
     width: 90%;
   }
   header,
-.layer,
-video.header-bg{
-  height: 120vh;
-}
+  .layer,
+  video.header-bg {
+    height: 120vh;
+  }
 }
 @media (max-width: 768px) {
   .topBar {
     padding: 0.7rem 1rem;
   }
-  .topBar p{
+  .topBar p {
     font-size: 10px;
   }
   header .header-content nav {
     padding: 1rem 2rem;
   }
-  header .header-content nav h1{
+  header .header-content nav h1 {
     font-size: 1.8rem;
     margin-top: 6px;
   }
-  header .header-content nav .menu{
+  header .header-content nav .menu {
     position: fixed;
     height: 100%;
     width: 150px;
@@ -780,28 +788,32 @@ video.header-bg{
     top: 0;
     background-color: var(--dark--);
     z-index: 10;
-    transition: margin-left .5s;
+    transition: margin-left 0.5s;
   }
-  header .header-content nav .menu.active{
+  header .header-content nav .menu.active {
     margin-left: 0;
   }
-  .fa-times{
+  #menu li a.reverse-list {
+    color: #fff;
+  }
+  .fa-times {
     display: block;
     position: absolute;
     left: 120px;
     top: 20px;
     font-size: 25px;
+    color: #fff !important;
   }
-  .fa-times:hover{
-    color: var(--red--);
+  .fa-times:hover {
+    color: var(--red--) !important;
   }
-  header .header-content nav .menu .avatar{
+  header .header-content nav .menu .avatar {
     display: block;
     margin: 5rem auto 3rem;
     width: 100px;
     height: 100px;
   }
-  header .header-content nav .menu li{
+  header .header-content nav .menu li {
     display: block;
     padding: 1rem;
   }
@@ -813,6 +825,9 @@ video.header-bg{
     color: #fff;
     font-size: 30px;
     cursor: pointer;
+  }
+  header .header-content nav .menuBtn.reverse-menuBtn {
+    color: #000;
   }
   .contact #contact {
     margin-bottom: 5rem;
@@ -832,6 +847,7 @@ video.header-bg{
   }
   header .header-content .container {
     left: 10vw;
+    width: 90vw;
   }
   header .header-content .container p {
     width: 80%;
