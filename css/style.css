@@ -748,7 +748,7 @@ section.facts .video img {
   }
   header,
 .layer,
-video{
+video.header-bg{
   height: 140vh;
 }
 }
