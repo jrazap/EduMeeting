@@ -31,6 +31,7 @@
 }
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   color: var(--white--);
@@ -138,6 +139,14 @@ header .header-content nav {
   background-color: var(--glass--);
   display: flex;
   align-content: center;
+}
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100% !important;
+  background-color: var(--white--) !important;
+  color: black;
+  z-index: 10;
 }
 header .header-content nav h1 {
   width: fit-content;
@@ -767,23 +776,23 @@ video.header-bg{
     margin-top: 6px;
   }
   header .header-content nav .menu{
-    /* display: none; */
     position: fixed;
     height: 100%;
     width: 150px;
-    display: none;
+    margin-left: -150px;
     left: 0;
     top: 0;
     background-color: var(--dark--);
     z-index: 10;
+    transition: margin-left .5s;
   }
   header .header-content nav .menu.active{
-    display: block;
+    margin-left: 0;
   }
   .fa-times{
     display: block;
     position: absolute;
-    right: 20px;
+    left: 120px;
     top: 20px;
     font-size: 25px;
   }

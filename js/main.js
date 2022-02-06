@@ -80,15 +80,29 @@ counters.forEach((counter) => {
   };
   animate();
 });
-
-// Close SideNav
-$("#menu .fa-times").on("click", function () {
-  $(".menu").remove("active");
+// Open Sidenav
+$("nav .menuBtn").on("click", function () {
+  $(".menu").toggleClass("active");
 }),
-  // Close SideNav When Click Outside
-  $("html").on("click", function () {
-    document.getElementById("mysidenav").style.width = "0";
-  }),
+  // Close SideNav
+  $("#menu .fa-times").on("click", function () {
+    $(".menu").removeClass("active");
+  });
+// Close SideNav When Click Outside
+$("html").on("click", function () {
+  $(".menu").removeClass("active");
+}),
   $(".menu, .menuBtn").click(function (e) {
     e.stopPropagation();
   });
+
+// sticky Header
+window.onscroll = function () {
+  var header = document.getElementById("stickyHeader");
+  var sticky = header.offsetTop;
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+};
