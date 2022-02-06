@@ -56,6 +56,7 @@ a {
 }
 /* Top Bar */
 .topBar {
+  height: 33px;
   padding: 0.7rem 15vw;
   background-color: var(--dark--);
   font-weight: 500;
@@ -135,16 +136,21 @@ header .header-content nav {
   top: 2rem;
   padding: 1rem 15vw;
   background-color: var(--glass--);
+  display: flex;
+  align-content: center;
 }
 header .header-content nav h1 {
   width: fit-content;
 }
-header .header-content nav ul {
+header .header-content nav .menu {
   position: absolute;
   right: 15vw;
   top: 2rem;
 }
-header .header-content nav ul li {
+header .header-content nav .menu .avatar,.fa-times,.menuBtn{
+  display: none;
+}
+header .header-content nav .menu li {
   display: inline-block;
   margin: auto 0.5rem;
   list-style: none;
@@ -208,7 +214,7 @@ header .header-content .container p span a {
   font-size: 13px;
 }
 .services .owl-nav {
-  display: inline-block !important;
+  display: inline-block;
   text-align: center;
   position: absolute;
   width: 100%;
@@ -318,6 +324,7 @@ header .header-content .container p span a {
 }
 .meeting-item .thumb img {
   border-radius: 20px 20px 0 0;
+  width: 100%;
 }
 .meeting-item .thumb .price {
   position: absolute;
@@ -378,7 +385,8 @@ header .header-content .container p span a {
   padding: 5rem 0;
 }
 .apply .cards,
-.apply .features ,.center-content{
+.apply .features,
+.center-content {
   align-self: center;
   vertical-align: middle;
 }
@@ -466,7 +474,8 @@ header .header-content .container p span a {
   max-height: 100vh;
 }
 /* Courses */
-.courses, .contact {
+.courses,
+.contact {
   background: url(../img/meetings-bg.jpg) fixed center center no-repeat;
   background-size: cover;
   padding: 5rem 0;
@@ -478,7 +487,7 @@ header .header-content .container p span a {
   padding: 25px;
   font-size: 18px;
   color: #1f272b;
-  text-align: center; 
+  text-align: center;
   border-bottom: 1px solid #eee;
 }
 .courses .item .down-content .info {
@@ -514,7 +523,7 @@ header .header-content .container p span a {
   margin-top: 40px;
 }
 .courses .owl-dots .owl-dot {
-  transition: all .5s;
+  transition: all 0.5s;
   width: 7px;
   height: 7px;
   background-color: #fff;
@@ -527,7 +536,7 @@ header .header-content .container p span a {
   height: 8px;
   border-radius: 4px;
 }
-.courses .owl-nav .owl-prev{
+.courses .owl-nav .owl-prev {
   margin-right: 10px;
   outline: none;
   position: absolute;
@@ -539,11 +548,11 @@ header .header-content .container p span a {
 }
 .courses .owl-nav .owl-prev:before {
   display: inline-block;
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   color: #1e1e1e;
   font-size: 25px;
   font-weight: 700;
-  content: '\f104';
+  content: "\f104";
   background-color: #fff;
   width: 50px;
   height: 50px;
@@ -552,19 +561,19 @@ header .header-content .container p span a {
 }
 .courses .owl-nav .owl-prev {
   opacity: 1;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 .courses .owl-nav .owl-prev:hover {
   opacity: 0.9;
 }
 .courses .owl-nav .owl-next {
   opacity: 1;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 .courses .owl-nav .owl-next:hover {
   opacity: 0.9;
 }
-.courses .owl-nav .owl-next{
+.courses .owl-nav .owl-next {
   margin-left: 10px;
   outline: none;
   position: absolute;
@@ -572,11 +581,11 @@ header .header-content .container p span a {
 }
 .courses .owl-nav .owl-next:before {
   display: inline-block;
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   color: #1e1e1e;
   font-size: 25px;
   font-weight: 700;
-  content: '\f105';
+  content: "\f105";
   background-color: #fff;
   width: 50px;
   height: 50px;
@@ -584,7 +593,7 @@ header .header-content .container p span a {
   line-height: 50px;
 }
 /* Facts */
-.facts{
+.facts {
   min-height: 100vh;
   display: grid;
   align-items: center;
@@ -592,7 +601,7 @@ header .header-content .container p span a {
   background-size: cover;
   padding: 5rem 0;
 }
-.facts h2{
+.facts h2 {
   font-size: 38px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -600,26 +609,26 @@ header .header-content .container p span a {
 }
 .count-area-content {
   text-align: center;
-  background-color: rgba(250,250,250,0.15);
+  background-color: rgba(250, 250, 250, 0.15);
   border-radius: 20px;
   padding: 25px 30px 35px 30px;
   margin: 15px 0px;
 }
 .percentage .count-digit:after {
-  content: '%';
+  content: "%";
   margin-left: 3px;
 }
 .count-digit {
-    margin: 5px 0px;
-    color: #f5a425;
-    font-weight: 700;
-    font-size: 36px;
+  margin: 5px 0px;
+  color: #f5a425;
+  font-weight: 700;
+  font-size: 36px;
 }
 .count-title {
-    font-size: 18px;
-    font-weight: 500;
-    color: #fff;
-    letter-spacing: 0.5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.5px;
 }
 .new-students {
   margin-top: 45px;
@@ -627,9 +636,7 @@ header .header-content .container p span a {
 section.facts .video {
   text-align: center;
   margin-left: 70px;
-  background-image: url(../img/video-item-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
+  background: url(../img/video-item-bg.jpg) center center no-repeat;
   background-size: cover;
   border-radius: 20px;
 }
@@ -638,7 +645,7 @@ section.facts .video img {
   max-width: 56px;
 }
 /* Contact */
-.contact{
+.contact {
   min-height: 100vh;
 }
 .contact #contact {
@@ -685,13 +692,13 @@ section.facts .video img {
   margin-bottom: 30px;
 }
 .contact .right-info {
-  background-color: #a12c2f;
+  background-color: var(--red--);
   border-radius: 20px;
   padding: 40px;
 }
 .contact .right-info ul li {
-  display: inline-block;
-  border-bottom: 1px solid rgba(250,250,250,0.15);
+  display: block;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.15);
   margin-bottom: 30px;
   padding-bottom: 30px;
 }
@@ -716,7 +723,7 @@ section.facts .video img {
 .footer {
   text-align: center;
   margin-top: 140px;
-  border-top: 1px solid rgba(250,250,250,0.15);
+  border-top: 1px solid rgba(250, 250, 250, 0.15);
   padding: 5rem 0 0;
 }
 .footer p {
@@ -726,4 +733,97 @@ section.facts .video img {
 }
 .footer p a {
   color: #f5a425;
+}
+/* Media Queries */
+@media (max-width: 480px) {
+  .topBar .social {
+    display: none;
+  }
+  .video {
+    margin-top: 1rem;
+    transform: translateX(-10%);
+  }
+  header .header-content .container p {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .topBar {
+    padding: 0.7rem 1rem;
+  }
+  .topBar p{
+    font-size: 10px;
+  }
+  header .header-content nav {
+    padding: 1rem 2rem;
+  }
+  header .header-content nav h1{
+    font-size: 1.8rem;
+    margin-top: 6px;
+  }
+  header .header-content nav .menu{
+    /* display: none; */
+    position: fixed;
+    height: 100%;
+    width: 150px;
+    display: none;
+    left: 0;
+    top: 0;
+    background-color: var(--dark--);
+    z-index: 10;
+  }
+  header .header-content nav .menu.active{
+    display: block;
+  }
+  .fa-times{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 25px;
+  }
+  .fa-times:hover{
+    color: var(--red--);
+  }
+  header .header-content nav .menu .avatar{
+    display: block;
+    margin: 5rem auto 3rem;
+    width: 100px;
+    height: 100px;
+  }
+  header .header-content nav .menu li{
+    display: block;
+    padding: 1rem;
+  }
+  header .header-content nav .menuBtn {
+    display: inline-block;
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .contact #contact {
+    margin-bottom: 5rem;
+  }
+  .video {
+    margin-top: 1rem;
+    transform: translateX(-5%);
+  }
+  .new-students {
+    margin-top: 1rem;
+  }
+  .meetings .categories {
+    margin: 0 auto 2rem;
+  }
+  .meetings .categories h4 {
+    text-align: center;
+  }
+  header .header-content .container {
+    left: 10vw;
+  }
+  header .header-content .container p {
+    width: 80%;
+  }
 }

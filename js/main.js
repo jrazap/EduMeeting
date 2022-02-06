@@ -80,3 +80,15 @@ counters.forEach((counter) => {
   };
   animate();
 });
+
+// Close SideNav
+$("#menu .fa-times").on("click", function () {
+  $(".menu").remove("active");
+}),
+  // Close SideNav When Click Outside
+  $("html").on("click", function () {
+    document.getElementById("mysidenav").style.width = "0";
+  }),
+  $(".menu, .menuBtn").click(function (e) {
+    e.stopPropagation();
+  });
