@@ -195,7 +195,7 @@ header .header-content .container p span a {
   padding: 0 30px;
 }
 .services .item {
-  background: url(../img/service-item-bg.jpg) no-repeat center center;
+  background: url(../img/service-item-bg.webp) no-repeat center center;
   background-size: cover;
   border-radius: 20px;
   text-align: center;
@@ -276,7 +276,7 @@ header .header-content .container p span a {
 }
 /* Meetings */
 .meetings {
-  background: url(../img/meetings-bg.jpg) fixed center center no-repeat;
+  background: url(../img/meetings-bg.webp) fixed center center no-repeat;
   background-size: cover;
   padding: 15rem 0 5rem 0;
 }
@@ -383,7 +383,7 @@ header .header-content .container p span a {
   min-height: 100vh;
   display: grid;
   align-items: center;
-  background: url(../img/apply-bg.jpg) fixed center center no-repeat;
+  background: url(../img/apply-bg.webp) fixed center center no-repeat;
   background-size: cover;
   padding: 5rem 0;
 }
@@ -479,7 +479,7 @@ header .header-content .container p span a {
 /* Courses */
 .courses,
 .contact {
-  background: url(../img/meetings-bg.jpg) fixed center center no-repeat;
+  background: url(../img/meetings-bg.webp) fixed center center no-repeat;
   background-size: cover;
   padding: 5rem 0;
 }
@@ -600,7 +600,7 @@ header .header-content .container p span a {
   min-height: 100vh;
   display: grid;
   align-items: center;
-  background: url(../img/facts-bg.jpg) fixed center center no-repeat;
+  background: url(../img/facts-bg.webp) fixed center center no-repeat;
   background-size: cover;
   padding: 5rem 0;
 }
@@ -639,7 +639,7 @@ header .header-content .container p span a {
 section.facts .video {
   text-align: center;
   margin-left: 70px;
-  background: url(../img/video-item-bg.jpg) center center no-repeat;
+  background: url(../img/video-item-bg.webp) center center no-repeat;
   background-size: cover;
   border-radius: 20px;
 }
